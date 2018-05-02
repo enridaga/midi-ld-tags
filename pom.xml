@@ -13,6 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<spotlight.service>http://model.dbpedia-spotlight.org/en/annotate</spotlight.service>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -84,7 +85,7 @@
 						<classpath />
 						<argument>-Dlog4j.configurationFile=${project.basedir}/log4j2.xml</argument>
 						<argument>enridaga.midild.spots.Spotter</argument>
-						<argument>http://model.dbpedia-spotlight.org/en/annotate</argument>
+						<argument>${spotlight.service}</argument>
 						<argument>0.1</argument>
 						<argument>${project.basedir}/filenames.csv</argument>
 						<argument>${project.basedir}/spots-0.1.csv</argument>
